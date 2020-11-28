@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600&family=Do+Hyeon&family=Texturina:ital@1&display=swap"
+          rel="stylesheet">
+
+    <title>J&W music</title>
+
+    <style>
+        /* 사이트 최상단에 위치한 사이트 이름 CSS */
+        .site_title {
+            font-family: 'Texturina', serif;
+        }
+
+        /* Navigation bar CSS */
+        .navbar {
+            font-family: 'Big Shoulders Stencil Display', cursive;
+            margin: auto 15% auto 15%;
+            border-radius: 10px;
+        }
+
+        /* carousel slide background image CSS */
+        .back_img {
+            position: absolute;
+            width: 100%;
+            height: 600px;
+            background-position: center;
+            background-size: cover;
+            filter: blur(10px);
+            -webkit-filter: blur(10px);
+            z-index: -1;
+        }
+
+        /* carousel slide front image CSS */
+        .front_img {
+            height: 600px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        /* carousel slide caption 중 제목 CSS */
+        .card_title {
+            font-weight: bold;
+        }
+
+        /* carousel slide caption 중 설명 CSS */
+        .card_desc {
+            font-weight: 10;
+        }
+    </style>
+</head>
+<body>
+<!-- 사이트 제목 -->
+<h1 class="site_title" align="center">J&W music</h1>
+
+<!-- Navigation bar -->
+<nav class="navbar navbar-light bg-light">
+    <a href="#" class="navbar-brand">Hiphop</a>
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</nav>
+
+<!-- carousel slide (핫 아티스트, 떠오르는 아티스트, 추천 아티스트) -->
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="back_img" style="background-image:url('../static/mursh_venom.jpg');"></div>
+            <div class="front_img" style="background-image:url('../static/mursh_venom.jpg');"></div>
+            <div class="carousel-caption d-none d-md-block">
+                <h4 class="card_title">이번 주의 가장 핫한 아티스트</h4>
+                <p class="card_desc"><small>쇼미더머니 역대급 무대, 머쉬베놈의 VVS. 보자보자 어디보자!</small></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="back_img" style="background-image:url('../static/Jo_gwang_ill.jpg');"></div>
+            <div class="front_img" style="background-image:url('../static/Jo_gwang_ill.jpg');"></div>
+            <div class="carousel-caption d-none d-md-block">
+                <h4 class="card_title">새로 떠오르는 아티스트</h4>
+                <p class="card_desc"><small>조광일, 그의 속사포같은 빠른 랩은 힙합 팬들을 열광시키고 있습니다.</small></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="back_img" style="background-image:url('../static/billie_eilish.jpg');"></div>
+            <div class="front_img" style="background-image:url('../static/billie_eilish.jpg');"></div>
+            <div class="carousel-caption d-none d-md-block">
+                <h4 class="card_title">이번 주의 J&W 추천 아티스트</h4>
+                <p class="card_desc"><small>바로 Billie Eilish. 그녀의 신곡 "Therefore I Am"을 들으러 가볼까요?</small></p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+</body>
+</html>
